@@ -1,7 +1,7 @@
-const Guests = ({ GUESTS, setSelectedGuest }) => {
+const Guests = ({ guests, setSelectedGuest }) => {
   return (
     <ul>
-      {GUESTS.map((guest) => (
+      {guests.map((guest) => (
         <li key={guest.id} onClick={() => setSelectedGuest(guest)}>
           {guest.name} | {guest.email} | {guest.phone}
         </li>
